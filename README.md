@@ -3,7 +3,7 @@
 <i>This repository is used to store notes and exercises from the following textbook:</i>
 
 ### Big Java Early Objects <br>
-  <img src="https://github.com/spesavento/Python/blob/master/Beginner_Python/textbook_cover.png" width="210" height="300">
+  <img src="https://github.com/spesavento/Java/blob/master/textbook_cover.png" width="210" height="250">
 
 #### Table of Contents <p>
 `Chapter 1:` &nbsp; Introduction\
