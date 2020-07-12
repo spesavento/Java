@@ -1,5 +1,11 @@
+
+import javax.swing.JOptionPane; //dialog viewer for exercises 15-17
+import java.net.URL; //used for exercise 18
+import javax.swing.ImageIcon; //used for exercise 18
+import javax.swing.JOptionPane; //used for exercise 18
+
 public class chapter1_exercises {
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception{ 
         //Exercise 1.1: Write a program that prints out Hellos in any language you'd like
         System.out.println("Hello Annyeong");
 
@@ -72,9 +78,32 @@ public class chapter1_exercises {
         System.out.println("      --------         ------");
 
         //Exercise 1.12: Write a program that prints three items, such as the names of your three best friends or favorite movies, on three separate lines.
-        System.out.println("Howl's Moving Castle");
-        System.out.println("The Matrix");
-        System.out.println("Cinema Paradiso");
+        System.out.println("Howl's Moving Castle \nThe Matrix \nCinema Paradiso");
 
+        //Exercise 1.13: Write a program that prints a poem of your choice.
+        System.out.println("You may tell that German college that their honour comes too late.");
+        System.out.println("But they must not waste repentance on the grizzly savant's fate;");
+        System.out.println("Though my soul may set in darkness, it will rise in perfect light;");
+        System.out.println("I have loved the stars too truly to be fearful of the night.");
+      
+        //Exercise 1.14: Write a program that prints the United States flag, using * and = characters.
+        System.out.println("********================\n********================\n********================\n********================\n********================\n========================\n========================\n========================\n========================");
+
+        //Exercise 1.15: Type in and run the following program. Then modify it to show the message “Hello, your name!”.
+        JOptionPane.showMessageDialog(null, "Hello, Sara!");
+
+        //Exercise 1.16: Type in and run the following program. Then modify it to print “Hello, name!”, displaying the name that the user typed in.
+        String name = JOptionPane.showInputDialog("What is your name?");
+        System.out.println("Hello, " + name + "!");
+
+        //Exercise 1.17: Modify the program from Exercise E1.16 so that the dialog continues with the message “My name is Hal! What would you like me to do?” 
+        // Discard the user’s input and display a message such as I'm sorry, Dave. I'm afraid I can't do that. Replace Dave with the name that was provided by the user.
+        JOptionPane.showInputDialog("My name is Hal! What would you like me to do?");
+        System.out.println("I'm sorry, " + name + ". I'm afraid I can't do that.");
+    
+        //Exercise 1.18: Type in and run the following program. Then modify it to show a different greeting and image.
+        //inside the code: you can use the following
+        URL imageLocation = new URL( "http://pets.neopets.com/cp/92x2bdtq/1/4.png");
+        JOptionPane.showMessageDialog(null, "Hello", "Title", JOptionPane.PLAIN_MESSAGE, new ImageIcon(imageLocation));
     }
 }
