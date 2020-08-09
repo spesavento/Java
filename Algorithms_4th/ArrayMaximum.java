@@ -12,7 +12,7 @@ public class ArrayMaximum {
         System.out.println("The maximum of the 1D array is: " + max1d);
 
         //2. find the maximum of a 2D array of integers
-        int[][] b = {{5,6,19,10}, {1,3,4,9}};
+        int[][] b = {{5,6,19,10}, {1,3,4,9}}; //set the maximum to the first in the array
         System.out.println("The number of rows is " + b.length); //2 
         System.out.println("The number of columns is " + b[1].length); //4
 
