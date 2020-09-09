@@ -8,7 +8,7 @@ public class IntegerType {
         Scanner in = new Scanner(System.in);
 
         //for one input
-        System.out.print("Please input an integer (q to quit): ");
+        System.out.print("Please input an integer: ");
         int userNum = in.nextInt();
         if (userNum < 0) {
             System.out.println("The number is negative.");
