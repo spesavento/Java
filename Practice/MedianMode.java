@@ -9,7 +9,7 @@ public class MedianMode {
         int sum = 0;
         for(int i = 0; i < n; i++){
             sum += arr[i];
-        }
+        } 
         //v1: (double)sum / (double)n;
         //v2:
         //DecimalFormat formatter = new DecimalFormat("#####0.000"); 

@@ -40,7 +40,7 @@ public class DecodeStringRev {
                     currLetters.append(hold); 
                 } 
                 digits = 0;
-            } else {
+            } else { 
                 currLetters.append(curr);
             }
         }
